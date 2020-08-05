@@ -174,8 +174,8 @@
             filePath = "algorithm-ps/kakao-recruitment/&#x110f;&#x1173;&#x1105;&#x1166;&#x110b;&#x1175;&#x11ab;&#x110b;&#x1175;&#x11ab;&#x1112;&#x1167;&#x11bc;&#x1108;&#x1169;&#x11b8;&#x1100;&#x1175;&#x1100;&#x1166;&#x110b;&#x1175;&#x11b7;.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
@@ -199,22 +199,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1CA6AA57-738E-4748-9898-60DCC163F7F5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "algorithm-ps/kakao-recruitment/&#x110f;&#x1173;&#x1105;&#x1166;&#x110b;&#x1175;&#x11ab;&#x110b;&#x1175;&#x11ab;&#x1112;&#x1167;&#x11bc;&#x1108;&#x1169;&#x11b8;&#x1100;&#x1175;&#x1100;&#x1166;&#x110b;&#x1175;&#x11b7;.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "main()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "18697479-CA4B-4FEB-8F95-5A467C42C0E2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -222,8 +206,8 @@
             filePath = "algorithm-ps/kakao-recruitment/&#x110f;&#x1173;&#x1105;&#x1166;&#x110b;&#x1175;&#x11ab;&#x110b;&#x1175;&#x11ab;&#x1112;&#x1167;&#x11bc;&#x1108;&#x1169;&#x11b8;&#x1100;&#x1175;&#x1100;&#x1166;&#x110b;&#x1175;&#x11b7;.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>
@@ -231,15 +215,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3D6FE0A4-8E58-4C31-BB96-9402EE64996E"
-            shouldBeEnabled = "Yes"
+            uuid = "8FE55170-8928-4327-B344-9D90AE50EA41"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "algorithm-ps/kakao-recruitment/&#x110f;&#x1173;&#x1105;&#x1166;&#x110b;&#x1175;&#x11ab;&#x110b;&#x1175;&#x11ab;&#x1112;&#x1167;&#x11bc;&#x1108;&#x1169;&#x11b8;&#x1100;&#x1175;&#x1100;&#x1166;&#x110b;&#x1175;&#x11b7;.cpp"
+            filePath = "algorithm-ps/bruteforce/&#x110b;&#x1175;&#x1106;&#x1169;&#x1110;&#x1175;&#x110f;&#x1169;&#x11ab;14226.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "main()"
             landmarkType = "9">
          </BreakpointContent>

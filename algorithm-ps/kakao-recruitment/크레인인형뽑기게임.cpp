@@ -6,6 +6,7 @@
 //  Copyright © 2020 kgh. All rights reserved.
 //
 
+
 #include <stdio.h>
 #include <iostream>
 #include <vector>
@@ -62,22 +63,27 @@ int main(void){
         int target = moves[k]-1;
         for(int i=0; i<board.size(); i++){
             if(board[i][target] != 0){
-                // 크레인 체크
             
-                board[i][target] = 0;
                 int crain = board[i][target];
+                // 스택이 비지 않았을때
                 if(!res.empty()){
+                    // 터트리는경우
                     if(crain == res.top()){
                         res.pop();
-                        ans +=1;
+                        ans +=2;
+                    }else {
+                        res.push(crain);
                     }
-                    break;
+                }else {
+                    res.push(crain);
+                    
                 }
-                res.push(crain);
-                
+                board[i][target] =0;
+                break;
             }
         }
     }
     cout << ans;
     return 0;
 }
+
