@@ -6,6 +6,7 @@
 //  Copyright © 2020 kgh. All rights reserved.
 //
 
+/*
 #include <stdio.h>
 #include <iostream>
 #include <vector>
@@ -70,3 +71,88 @@ int main(void){
     cout << max << '\n' <<  min << '\n';
     return 0;
 }
+
+*/
+#include <iostream>
+#include <stdio.h>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+int main(void){
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    vector<int> check;
+    for(int i=0; i<n; i++){
+        cin >> v[i];
+    }
+    int plus, minus, multi, div;
+    
+    cin >> plus >> minus >> multi >> div;
+    
+    for(int i=0; i<plus; i++){
+        check.push_back(1);
+    }
+    for(int i=0; i<minus; i++){
+        check.push_back(2);
+    }
+    for(int i=0; i<multi; i++){
+        check.push_back(3);
+    }
+    for(int i=0; i<div; i++){
+        check.push_back(4);
+    }
+    
+    vector<int> res;
+    do {
+        int sum = v[0];
+        
+        for(int i=1; i<n; i++){
+            if(check[i-1] == 1){
+                sum += v[i];
+            }else if(check[i-1] == 2){
+                sum -= v[i];
+            }else if(check[i-1] == 3){
+                sum *= v[i];
+            }else if(check[i-1] == 4){
+                if(sum < 0){
+                    sum = -sum;
+                    sum = (sum / v[i]);
+                    sum = -sum;
+                }else {
+                    sum = sum / v[i];
+                }
+            }
+        }
+        res.push_back(sum);
+    } while (next_permutation(check.begin(), check.end()));
+
+    int max = *max_element(res.begin(), res.end());
+    int min = *min_element(res.begin(), res.end());
+    
+    cout << max << '\n' << min << '\n';
+    return 0;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

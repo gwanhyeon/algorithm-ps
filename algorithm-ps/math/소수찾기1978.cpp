@@ -6,6 +6,8 @@
 //  Copyright © 2020 kgh. All rights reserved.
 //
 
+/*
+
 #include <stdio.h>
 #include <iostream>
 using namespace std;
@@ -31,24 +33,26 @@ bool primeNumber(int n){
     
     
 }
-int main(void){
-    /*
-    int t = 0;
-    int cnt = 0;
-    cin >> t;
+ */
+/*
+int t = 0;
+int cnt = 0;
+cin >> t;
+
+for(int i=0; i<t; i++){
     
-    for(int i=0; i<t; i++){
-        
-        cin >> arr[i];
-        bool res = primeNumber(arr[i]);
-        
-        // res값이 소수 일경우 값을 1 개 늘려준다.
-        if(res == true){
-            cnt += 1;
-        }
+    cin >> arr[i];
+    bool res = primeNumber(arr[i]);
+    
+    // res값이 소수 일경우 값을 1 개 늘려준다.
+    if(res == true){
+        cnt += 1;
     }
-    cout << cnt;
-     */
+}
+cout << cnt;
+ */
+/*
+int main(void){
     
     
     int cnt=2;
@@ -62,4 +66,36 @@ int main(void){
     
     return 0;
     
+}
+ */
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int prime(int n){
+    if(n < 2){
+        return false;
+    }
+    for(int i=2; i*i<=n; i++){
+        if(n % i == 0){
+            return false;
+        }
+    }
+    return true;
+}
+int main(void){
+    
+    int n;
+    cin >> n;
+    int cnt = 0;
+    for(int i=0; i<n; i++){
+        int num = 0;
+        cin >> num;
+        if(prime(num) == true){
+            cnt +=1;
+        }
+    }
+    cout << cnt << '\n';
+    return 0;
 }

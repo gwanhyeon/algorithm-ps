@@ -36,10 +36,10 @@ void Eratosthenes_Overflow(){
 }
 
 void Eratosthenes_None_Overflow(){
-    int n,m;
+        int n,m;
        cin >> n >> m;
        check[0] = check[1] = true;
-    // 오버플로우 방지 i*i
+        // 오버플로우 방지 i*i
        for(int i=2; i*i<=m; i++){
            if(check[i] == false){
                prime[cnt] = i;
@@ -57,7 +57,6 @@ void Eratosthenes_None_Overflow(){
            }
        }
 }
-
 int main(void){
     Eratosthenes_None_Overflow();
 

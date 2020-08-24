@@ -5,6 +5,8 @@
 //  Created by kgh on 2020/07/28.
 //  Copyright © 2020 kgh. All rights reserved.
 //
+//
+/*
 
 #include <stdio.h>
 #include <iostream>
@@ -40,3 +42,55 @@ int main(void){
 
     return 0;
 }
+ 
+ */
+
+
+
+// 8/19 복습
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int arr[11];
+int cnt = 0;
+
+int dfs(int n, int sum){
+    if(n == sum){
+        return 1;
+    }
+    if(n < sum){
+        return 0;
+    }
+    return dfs(n, sum+1) + dfs(n, sum+2) + dfs(n, sum+3);
+}
+
+int main(void){
+    int t;
+    cin >>t;
+    for(int i=0; i<t; i++){
+        int n;
+        cin >> n;
+        int res = dfs(n,0);
+        cout << res << '\n';
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@
 //
 //  Created by kgh on 2020/07/26.
 //  Copyright © 2020 kgh. All rights reserved.
-
+/*
 #include <stdio.h>
 #include <iostream>
 #include <algorithm>
@@ -56,3 +56,64 @@ int main(void){
     
     return 0;
 }
+*/
+
+
+// 8월 19일 복습 하기
+#include <stdio.h>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+int w[10][10];
+
+int main(void){
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cin >> w[i][j];
+        }
+    }
+    
+    for(int i=0; i<n; i++){
+        v[i] = i;
+    }
+    int ans = 2147483647;
+    do {
+        int sum = 0;
+        bool tf = true;
+        
+        for(int i=0; i<n-1; i++){
+            if(w[v[i]][v[i+1]] == 0){
+                tf = false;
+            }else {
+                sum += w[v[i]][v[i+1]];
+            }
+        }
+        if(tf == true && w[v[n-1]][v[0]] != 0){
+            sum += w[v[n-1]][v[0]];
+            if(ans > sum){
+                ans = sum;
+            }
+        }
+    } while (next_permutation(v.begin(), v.end()));
+        
+    cout << ans << '\n';
+    return 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+

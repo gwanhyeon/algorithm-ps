@@ -5,7 +5,7 @@
 //  Created by kgh on 2020/07/29.
 //  Copyright © 2020 kgh. All rights reserved.
 //
-
+/*
 #include <stdio.h>
 #include <iostream>
 #include <vector>
@@ -59,3 +59,53 @@ int main(void){
     
     return 0;
 }
+
+ */
+
+#include <iostream>
+#include <stdio.h>
+#include <vector>
+using namespace std;
+
+int n,m = 0;
+int cnt = 0;
+int check[100001];
+vector<int> res;
+
+void dfs(vector<int> v, int sum, int idx){
+    
+    if(res.size() > 0){
+        int ans = 0;
+        for(int i=0; i<res.size(); i++){
+            ans += res[i];
+        }
+        if(ans == m){
+            cnt+=1;
+        }
+    }
+    
+    for(int i=idx; i<n; i++){
+        if(check[i] == true){
+            continue;
+        }
+        check[i] = true;
+        res.push_back(v[i]);
+        dfs(v,sum,i);
+        check[i] = false;
+        res.pop_back();
+    }
+}
+int main(void){
+    
+    cin >> n >> m;
+    vector<int> v(n);
+    for(int i=0; i<n; i++){
+        cin >> v[i];
+    }
+    dfs(v,0,0);
+    
+    cout << cnt;
+    return 0;
+}
+
+

@@ -29,10 +29,6 @@ int main(void){
                 cnt += 1;
             }
         }
-        
-        
-        
-        
         cout << s[i];
     }
     

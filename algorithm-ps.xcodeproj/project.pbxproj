@@ -6,6 +6,10 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D64A9C5D24F3B78100B38721 /* 부분수열의합1182(bitmask).cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6AAA43924D2C43E00AA056E /* 부분수열의합1182(bitmask).cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D66D76E224C44A10007D794C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -134,6 +138,20 @@
 			path = dp;
 			sourceTree = "<group>";
 		};
+		D64A9C4C24EBEF8A00B38721 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D64A9C5B24F393DA00B38721 /* samsung */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = samsung;
+			sourceTree = "<group>";
+		};
 		D661FCE224D7E0FC0036D7E3 /* bfs */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +183,7 @@
 			children = (
 				D66D76E624C44A10007D794C /* algorithm-ps */,
 				D66D76E524C44A10007D794C /* Products */,
+				D64A9C4C24EBEF8A00B38721 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +198,7 @@
 		D66D76E624C44A10007D794C /* algorithm-ps */ = {
 			isa = PBXGroup;
 			children = (
+				D64A9C5B24F393DA00B38721 /* samsung */,
 				D64A9C3724E7F38D00B38721 /* dp */,
 				D64A9C2824E2A21D00B38721 /* hand-write-coding */,
 				D661FCF324D958CD0036D7E3 /* programmers */,
@@ -317,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64A9C5D24F3B78100B38721 /* 부분수열의합1182(bitmask).cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

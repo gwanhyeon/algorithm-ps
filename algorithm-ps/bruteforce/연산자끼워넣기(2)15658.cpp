@@ -5,6 +5,7 @@
 //  Created by kgh on 2020/07/30.
 //  Copyright © 2020 kgh. All rights reserved.
 //
+/*
 
 #include <stdio.h>
 #include <iostream>
@@ -72,4 +73,57 @@ int main(void){
     cout << max << '\n' << min << '\n';
     
     
+}
+ */
+
+#include <iostream>
+#include <stdio.h>
+#include <vector>
+#include <algorithm>
+using namespace std;
+vector<int> res;
+
+void dfs(int sum, int idx, vector<int> v, int plus, int minus, int multi, int div){
+    if(idx == v.size()){
+        res.push_back(sum);
+        return;
+    }
+    
+    if(plus > 0){
+        dfs(sum+v[idx], idx+1, v, plus-1, minus, multi, div);
+    }
+    if(minus > 0){
+        dfs(sum-v[idx], idx+1, v, plus, minus-1, multi, div);
+    }
+    if(multi > 0){
+        dfs(sum*v[idx], idx+1, v, plus, minus, multi-1, div);
+    }
+    if(div > 0){
+        dfs(sum/v[idx], idx+1, v, plus, minus, multi, div-1);
+    }
+    
+    
+}
+int main(void){
+    
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    
+    for(int i=0; i<n; i++){
+        cin >> v[i];
+    }
+    
+    int plus, minus, multi, div;
+    
+    cin >> plus >> minus >> multi >> div;
+    
+    dfs(v[0],1,v,plus,minus,multi,div);
+    
+    int max = *max_element(res.begin(), res.end());
+    int min = *min_element(res.begin(), res.end());
+    
+    cout << max << '\n' << min;
+    
+    return 0;
 }
