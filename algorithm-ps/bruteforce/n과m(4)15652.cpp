@@ -20,7 +20,6 @@ void dfs(int idx, int cnt){
             cout << v[i] << ' ';
         }
         cout << '\n';
-        
         return;
     }
     
@@ -32,7 +31,6 @@ void dfs(int idx, int cnt){
 }
 int main(void){
     cin >> n >> m;
-    
     dfs(1,0);
     
     return 0;
