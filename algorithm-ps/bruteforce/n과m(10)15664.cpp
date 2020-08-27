@@ -19,15 +19,13 @@ bool check[10001];
 void dfs(int idx, int cnt){
     if(cnt == m ){
         vector<int> tmp;
-        
         for(int i=0; i<v.size(); i++){
             tmp.push_back(v[i]);
         }
-        
         res.push_back(tmp);
         return;
     }
-    
+
     for(int i=idx; i<n; i++){
         if(check[i] == true){
             continue;
