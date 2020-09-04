@@ -19,12 +19,11 @@ int gcd(int w,int h){
     return gcd(h, w % h);
 }
 int main(void){
-    long long w = 8;
+    int w = 8;
     int h = 12;
     
     int gcd_num = gcd(w,h);
     long long sqaure_area = (long long)w * (long long)h;
-    
     long long answer = sqaure_area - ((long long)w + (long long)h - gcd_num);
     cout << answer;
    
