@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D662EA9525012D18002CCD1C /* 방금그곡.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D662EA9425012D18002CCD1C /* 방금그곡.cpp */; };
+		D662EA9A25053C85002CCD1C /* 연구소14502.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D662EA9925053C85002CCD1C /* 연구소14502.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +62,8 @@
 		D661FCFE24DC3D810036D7E3 /* 벽부수고이동하기2206.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "벽부수고이동하기2206.cpp"; sourceTree = "<group>"; };
 		D661FD0024DC5DB90036D7E3 /* 탈출3055.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "탈출3055.cpp"; sourceTree = "<group>"; };
 		D662EA9425012D18002CCD1C /* 방금그곡.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "방금그곡.cpp"; sourceTree = "<group>"; };
+		D662EA9625025CD6002CCD1C /* 수식최대화.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "수식최대화.cpp"; sourceTree = "<group>"; };
+		D662EA9925053C85002CCD1C /* 연구소14502.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "연구소14502.cpp"; sourceTree = "<group>"; };
 		D66D76E424C44A10007D794C /* algorithm-ps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "algorithm-ps"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66D76EF24C44A5A007D794C /* 감시15683.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "감시15683.cpp"; sourceTree = "<group>"; };
 		D698C7AF24C58CA60089C19E /* 나머지10430.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "나머지10430.cpp"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		D64A9C5B24F393DA00B38721 /* samsung */ = {
 			isa = PBXGroup;
 			children = (
+				D662EA9925053C85002CCD1C /* 연구소14502.cpp */,
 			);
 			path = samsung;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				D6AFE54724FE89B2001855D7 /* 예상대진표.cpp */,
 				D6AFE54924FF51AD001855D7 /* 후보키.cpp */,
 				D662EA9425012D18002CCD1C /* 방금그곡.cpp */,
+				D662EA9625025CD6002CCD1C /* 수식최대화.cpp */,
 			);
 			path = kakao;
 			sourceTree = "<group>";
@@ -387,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D662EA9525012D18002CCD1C /* 방금그곡.cpp in Sources */,
+				D662EA9A25053C85002CCD1C /* 연구소14502.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
