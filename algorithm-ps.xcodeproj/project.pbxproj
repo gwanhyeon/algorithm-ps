@@ -6,10 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		D662EA9A25053C85002CCD1C /* 연구소14502.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D662EA9925053C85002CCD1C /* 연구소14502.cpp */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		D66D76E224C44A10007D794C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -117,6 +113,27 @@
 		D6AFE54524FE2E99001855D7 /* 소수만들기.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "소수만들기.cpp"; sourceTree = "<group>"; };
 		D6AFE54724FE89B2001855D7 /* 예상대진표.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "예상대진표.cpp"; sourceTree = "<group>"; };
 		D6AFE54924FF51AD001855D7 /* 후보키.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "후보키.cpp"; sourceTree = "<group>"; };
+		D6B490712507803400863B2B /* 2019bits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019bits; sourceTree = "<group>"; };
+		D6B490722507803400863B2B /* 2019bruteforce */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2019bruteforce; path = ../../Algorithm_CodingTest/algorithm_study/beakjoon_algorithm/beakjoon_algorithm/2019bruteforce; sourceTree = "<group>"; };
+		D6B490732507803500863B2B /* 2019삼성역량대비 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019삼성역량대비"; sourceTree = "<group>"; };
+		D6B490742507803500863B2B /* 2019ProgrammersLv2,3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019ProgrammersLv2,3"; sourceTree = "<group>"; };
+		D6B490752507803500863B2B /* 2019dp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2019dp; path = ../../Algorithm_CodingTest/algorithm_study/beakjoon_algorithm/beakjoon_algorithm/2019dp; sourceTree = "<group>"; };
+		D6B490762507803500863B2B /* 2019KakaoCodingTest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019KakaoCodingTest; sourceTree = "<group>"; };
+		D6B490772507803500863B2B /* 2019kingdog */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019kingdog; sourceTree = "<group>"; };
+		D6B490782507803600863B2B /* 2019Unix-Programming */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019Unix-Programming"; sourceTree = "<group>"; };
+		D6B490792507803600863B2B /* 2019자료구조 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019자료구조"; sourceTree = "<group>"; };
+		D6B4907A2507803600863B2B /* 2019HackerRank */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019HackerRank; sourceTree = "<group>"; };
+		D6B4907B2507803600863B2B /* 2019CodingInterview */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019CodingInterview; sourceTree = "<group>"; };
+		D6B4907C2507803600863B2B /* 2019naver-hackday-codingtest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019naver-hackday-codingtest"; sourceTree = "<group>"; };
+		D6B4907D2507803700863B2B /* 2019브루트포스 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019브루트포스"; sourceTree = "<group>"; };
+		D6B4907E2507803700863B2B /* 2019Lecture_beakjoon_Excercise */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019Lecture_beakjoon_Excercise; sourceTree = "<group>"; };
+		D6B4907F2507803700863B2B /* 2019dfs_bfs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019dfs_bfs; sourceTree = "<group>"; };
+		D6B490802507803700863B2B /* 2019stackqueue */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019stackqueue; sourceTree = "<group>"; };
+		D6B490812507803800863B2B /* 2019CodingTestExam */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019CodingTestExam; sourceTree = "<group>"; };
+		D6B490822507803800863B2B /* 2019greedy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019greedy; sourceTree = "<group>"; };
+		D6B490832507803800863B2B /* 2019programmers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2019programmers; path = ../../Algorithm_CodingTest/algorithm_study/beakjoon_algorithm/beakjoon_algorithm/2019programmers; sourceTree = "<group>"; };
+		D6B490842507803800863B2B /* 2019알고리즘 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019알고리즘"; sourceTree = "<group>"; };
+		D6B490852507803800863B2B /* 2019hashing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019hashing; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +147,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D64A9C2824E2A21D00B38721 /* hand-write-coding */ = {
+		D64A9C2824E2A21D00B38721 /* 2020hand-write-coding */ = {
 			isa = PBXGroup;
 			children = (
 				D64A9C2B24E2A24F00B38721 /* 진법변환.cpp */,
@@ -139,10 +156,10 @@
 				D64A9C3124E4E94000B38721 /* 정렬.cpp */,
 				D64A9C3324E526A500B38721 /* test.cpp */,
 			);
-			path = "hand-write-coding";
+			path = "2020hand-write-coding";
 			sourceTree = "<group>";
 		};
-		D64A9C3724E7F38D00B38721 /* dp */ = {
+		D64A9C3724E7F38D00B38721 /* 2020dp */ = {
 			isa = PBXGroup;
 			children = (
 				D64A9C3824E7F3A200B38721 /* 피보나치bottom-up.cpp */,
@@ -154,7 +171,7 @@
 				D64A9C4724E91FA500B38721 /* 123더하기15988.cpp */,
 				D64A9C4924E9339F00B38721 /* 카드구매하기11052.cpp */,
 			);
-			path = dp;
+			path = 2020dp;
 			sourceTree = "<group>";
 		};
 		D64A9C4C24EBEF8A00B38721 /* Frameworks */ = {
@@ -164,15 +181,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D64A9C5B24F393DA00B38721 /* samsung */ = {
+		D64A9C5B24F393DA00B38721 /* 2020samsung */ = {
 			isa = PBXGroup;
 			children = (
 				D662EA9925053C85002CCD1C /* 연구소14502.cpp */,
 			);
-			path = samsung;
+			path = 2020samsung;
 			sourceTree = "<group>";
 		};
-		D64A9C5E24F3E08800B38721 /* kakao */ = {
+		D64A9C5E24F3E08800B38721 /* 2020kakao */ = {
 			isa = PBXGroup;
 			children = (
 				D64A9C5F24F3FDBE00B38721 /* 예산.cpp */,
@@ -192,20 +209,20 @@
 				D662EA9425012D18002CCD1C /* 방금그곡.cpp */,
 				D662EA9625025CD6002CCD1C /* 수식최대화.cpp */,
 			);
-			path = kakao;
+			path = 2020kakao;
 			sourceTree = "<group>";
 		};
-		D64A9C6D24F9EB6E00B38721 /* line */ = {
+		D64A9C6D24F9EB6E00B38721 /* 2020Line */ = {
 			isa = PBXGroup;
 			children = (
 				D64A9C6E24F9EB7D00B38721 /* test01.cpp */,
 				D64A9C7024F9F15900B38721 /* test02.cpp */,
 				D64A9C7424F9FC6F00B38721 /* test03.cpp */,
 			);
-			path = line;
+			path = 2020Line;
 			sourceTree = "<group>";
 		};
-		D661FCE224D7E0FC0036D7E3 /* bfs */ = {
+		D661FCE224D7E0FC0036D7E3 /* 2020bfs */ = {
 			isa = PBXGroup;
 			children = (
 				D661FCF624DA741E0036D7E3 /* 이모티콘14226.cpp */,
@@ -220,15 +237,15 @@
 				D661FCFE24DC3D810036D7E3 /* 벽부수고이동하기2206.cpp */,
 				D661FD0024DC5DB90036D7E3 /* 탈출3055.cpp */,
 			);
-			path = bfs;
+			path = 2020bfs;
 			sourceTree = "<group>";
 		};
-		D661FCF324D958CD0036D7E3 /* programmers */ = {
+		D661FCF324D958CD0036D7E3 /* 2020programmers */ = {
 			isa = PBXGroup;
 			children = (
 				D661FCF424D958DC0036D7E3 /* 완주하지못한선수.cpp */,
 			);
-			path = programmers;
+			path = 2020programmers;
 			sourceTree = "<group>";
 		};
 		D66D76DB24C44A10007D794C = {
@@ -251,21 +268,42 @@
 		D66D76E624C44A10007D794C /* algorithm-ps */ = {
 			isa = PBXGroup;
 			children = (
-				D64A9C6D24F9EB6E00B38721 /* line */,
-				D64A9C5E24F3E08800B38721 /* kakao */,
-				D64A9C5B24F393DA00B38721 /* samsung */,
-				D64A9C3724E7F38D00B38721 /* dp */,
-				D64A9C2824E2A21D00B38721 /* hand-write-coding */,
-				D661FCF324D958CD0036D7E3 /* programmers */,
-				D661FCE224D7E0FC0036D7E3 /* bfs */,
-				D6AAA41624CBFE9E00AA056E /* kakao-recruitment */,
-				D698C7AE24C58C8F0089C19E /* math */,
-				D66D76EE24C44A21007D794C /* bruteforce */,
+				D6B4907D2507803700863B2B /* 2019브루트포스 */,
+				D6B490732507803500863B2B /* 2019삼성역량대비 */,
+				D6B490842507803800863B2B /* 2019알고리즘 */,
+				D6B490792507803600863B2B /* 2019자료구조 */,
+				D6B490712507803400863B2B /* 2019bits */,
+				D6B490722507803400863B2B /* 2019bruteforce */,
+				D6B4907B2507803600863B2B /* 2019CodingInterview */,
+				D6B490812507803800863B2B /* 2019CodingTestExam */,
+				D6B4907F2507803700863B2B /* 2019dfs_bfs */,
+				D6B490752507803500863B2B /* 2019dp */,
+				D6B490822507803800863B2B /* 2019greedy */,
+				D6B4907A2507803600863B2B /* 2019HackerRank */,
+				D6B490852507803800863B2B /* 2019hashing */,
+				D6B490762507803500863B2B /* 2019KakaoCodingTest */,
+				D6B490772507803500863B2B /* 2019kingdog */,
+				D6B4907E2507803700863B2B /* 2019Lecture_beakjoon_Excercise */,
+				D6B4907C2507803600863B2B /* 2019naver-hackday-codingtest */,
+				D6B490832507803800863B2B /* 2019programmers */,
+				D6B490742507803500863B2B /* 2019ProgrammersLv2,3 */,
+				D6B490802507803700863B2B /* 2019stackqueue */,
+				D6B490782507803600863B2B /* 2019Unix-Programming */,
+				D64A9C6D24F9EB6E00B38721 /* 2020Line */,
+				D64A9C5E24F3E08800B38721 /* 2020kakao */,
+				D64A9C5B24F393DA00B38721 /* 2020samsung */,
+				D64A9C3724E7F38D00B38721 /* 2020dp */,
+				D64A9C2824E2A21D00B38721 /* 2020hand-write-coding */,
+				D661FCF324D958CD0036D7E3 /* 2020programmers */,
+				D661FCE224D7E0FC0036D7E3 /* 2020bfs */,
+				D6AAA41624CBFE9E00AA056E /* 2020kakao-recruitment */,
+				D698C7AE24C58C8F0089C19E /* 2020math */,
+				D66D76EE24C44A21007D794C /* 2020bruteforce */,
 			);
 			path = "algorithm-ps";
 			sourceTree = "<group>";
 		};
-		D66D76EE24C44A21007D794C /* bruteforce */ = {
+		D66D76EE24C44A21007D794C /* 2020bruteforce */ = {
 			isa = PBXGroup;
 			children = (
 				D66D76EF24C44A5A007D794C /* 감시15683.cpp */,
@@ -308,10 +346,10 @@
 				D6AAA44224D6F66900AA056E /* 이분그래프1707.cpp */,
 				D661FCE524D7FC6C0036D7E3 /* 단지번호붙이기2667(dfs).cpp */,
 			);
-			path = bruteforce;
+			path = 2020bruteforce;
 			sourceTree = "<group>";
 		};
-		D698C7AE24C58C8F0089C19E /* math */ = {
+		D698C7AE24C58C8F0089C19E /* 2020math */ = {
 			isa = PBXGroup;
 			children = (
 				D698C7AF24C58CA60089C19E /* 나머지10430.cpp */,
@@ -322,16 +360,16 @@
 				D6AAA3EC24C6A13200AA056E /* 소수구하기1929.cpp */,
 				D6AAA3EF24C6AF3D00AA056E /* 골드바흐의추측6588.cpp */,
 			);
-			path = math;
+			path = 2020math;
 			sourceTree = "<group>";
 		};
-		D6AAA41624CBFE9E00AA056E /* kakao-recruitment */ = {
+		D6AAA41624CBFE9E00AA056E /* 2020kakao-recruitment */ = {
 			isa = PBXGroup;
 			children = (
 				D6AAA41724CBFFC900AA056E /* 문자열압축.cpp */,
 				D661FCED24D8778A0036D7E3 /* 크레인인형뽑기게임.cpp */,
 			);
-			path = "kakao-recruitment";
+			path = "2020kakao-recruitment";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +429,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D662EA9A25053C85002CCD1C /* 연구소14502.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
