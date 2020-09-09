@@ -6,6 +6,10 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D6B4908C2508BBF200863B2B /* 로봇청소기.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6B4908B2508BBF200863B2B /* 로봇청소기.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D66D76E224C44A10007D794C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -113,8 +117,6 @@
 		D6AFE54524FE2E99001855D7 /* 소수만들기.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "소수만들기.cpp"; sourceTree = "<group>"; };
 		D6AFE54724FE89B2001855D7 /* 예상대진표.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "예상대진표.cpp"; sourceTree = "<group>"; };
 		D6AFE54924FF51AD001855D7 /* 후보키.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "후보키.cpp"; sourceTree = "<group>"; };
-		D6B490712507803400863B2B /* 2019bits */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019bits; sourceTree = "<group>"; };
-		D6B490722507803400863B2B /* 2019bruteforce */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2019bruteforce; path = ../../Algorithm_CodingTest/algorithm_study/beakjoon_algorithm/beakjoon_algorithm/2019bruteforce; sourceTree = "<group>"; };
 		D6B490732507803500863B2B /* 2019삼성역량대비 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019삼성역량대비"; sourceTree = "<group>"; };
 		D6B490742507803500863B2B /* 2019ProgrammersLv2,3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019ProgrammersLv2,3"; sourceTree = "<group>"; };
 		D6B490752507803500863B2B /* 2019dp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2019dp; path = ../../Algorithm_CodingTest/algorithm_study/beakjoon_algorithm/beakjoon_algorithm/2019dp; sourceTree = "<group>"; };
@@ -130,10 +132,10 @@
 		D6B4907F2507803700863B2B /* 2019dfs_bfs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019dfs_bfs; sourceTree = "<group>"; };
 		D6B490802507803700863B2B /* 2019stackqueue */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019stackqueue; sourceTree = "<group>"; };
 		D6B490812507803800863B2B /* 2019CodingTestExam */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019CodingTestExam; sourceTree = "<group>"; };
-		D6B490822507803800863B2B /* 2019greedy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019greedy; sourceTree = "<group>"; };
 		D6B490832507803800863B2B /* 2019programmers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2019programmers; path = ../../Algorithm_CodingTest/algorithm_study/beakjoon_algorithm/beakjoon_algorithm/2019programmers; sourceTree = "<group>"; };
 		D6B490842507803800863B2B /* 2019알고리즘 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "2019알고리즘"; sourceTree = "<group>"; };
 		D6B490852507803800863B2B /* 2019hashing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 2019hashing; sourceTree = "<group>"; };
+		D6B4908B2508BBF200863B2B /* 로봇청소기.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "로봇청소기.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				D662EA9925053C85002CCD1C /* 연구소14502.cpp */,
+				D6B4908B2508BBF200863B2B /* 로봇청소기.cpp */,
 			);
 			path = 2020samsung;
 			sourceTree = "<group>";
@@ -272,13 +275,10 @@
 				D6B490732507803500863B2B /* 2019삼성역량대비 */,
 				D6B490842507803800863B2B /* 2019알고리즘 */,
 				D6B490792507803600863B2B /* 2019자료구조 */,
-				D6B490712507803400863B2B /* 2019bits */,
-				D6B490722507803400863B2B /* 2019bruteforce */,
 				D6B4907B2507803600863B2B /* 2019CodingInterview */,
 				D6B490812507803800863B2B /* 2019CodingTestExam */,
 				D6B4907F2507803700863B2B /* 2019dfs_bfs */,
 				D6B490752507803500863B2B /* 2019dp */,
-				D6B490822507803800863B2B /* 2019greedy */,
 				D6B4907A2507803600863B2B /* 2019HackerRank */,
 				D6B490852507803800863B2B /* 2019hashing */,
 				D6B490762507803500863B2B /* 2019KakaoCodingTest */,
@@ -429,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B4908C2508BBF200863B2B /* 로봇청소기.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
