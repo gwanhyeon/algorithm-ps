@@ -6,6 +6,87 @@
 //  Copyright © 2020 kgh. All rights reserved.
 //
 
+
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+const int MAX_SIZE = 51;
+int dx[4] = {-1,0,1,0};
+int dy[4] = {0,1,0,-1};
+
+int back_dx[4] = {1,0,-1,0};
+int back_dy[4] = {0,-1,0,1};
+
+int ans = 0;
+int map[MAX_SIZE][MAX_SIZE];
+int n,m;
+int r,c,d;
+
+void dfs(int r,int c,int d){
+    
+    // 뒤에가 벽이라면 종료 시켜준다.
+    if(map[r][c] == 1){
+        return;
+    }
+    // 현재 위치 청소
+    if(map[r][c] == 0){
+        map[r][c] = 2;      // 현재 위치 청소
+        ans++;
+    }
+
+    for(int i=0; i<4; i++){
+        //int next_dir = d-1 < 0 ? 3 : d-1;
+        int next_dir = (d+3) % 4;
+        int next_x = r + dx[next_dir];
+        int next_y = c + dy[next_dir];
+        
+        // 빈칸 이면 청소
+        if(map[next_x][next_y] == 0){
+            dfs(next_x, next_y, next_dir);
+            return;
+        }
+        // 빈칸이 아닐 경우
+        else {
+            d = next_dir;
+        }
+    }
+    // 4번의 방향을 모두돌고 다시 제자리로 돌아가는것이므로 만약에 0에서 시작해서 3까지 이동해서 모든 값들의 방향이 이동되어서 3일 경우 0의 자리로 돌아가주는것을 생각해주어야한다. 그리고 나서 후진을 한다.
+    int next_x = r + back_dx[d]; // 기존의 방향대로 회전시켜준다.
+    int next_y = c + back_dy[d];
+    dfs(next_x, next_y, d);
+}
+
+int main(void){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    
+    cin >> n >> m;
+    cin >> r >> c >> d;
+    
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            cin >> map[i][j];
+        }
+    }
+    dfs(r,c,d);
+    cout << ans << '\n';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  KGH 문제 풀이 너무 길고, 방대해지고 로직이 꼬이는 상황이 발생
 #include <stdio.h>
 #include <iostream>
 #include <queue>
@@ -326,6 +407,10 @@ int main(void){
     cin >> n >> m;
     cin >> r >> c >> d;
     
+    cout << 3 % 4;
+    
+    
+    
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
             cin >> map[i][j];
@@ -334,3 +419,4 @@ int main(void){
     bfs(r,c);
     return 0;
 }
+ */
