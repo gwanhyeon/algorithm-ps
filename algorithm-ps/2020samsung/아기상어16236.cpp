@@ -5,11 +5,6 @@
 //  Created by kgh on 2020/09/16.
 //  Copyright © 2020 kgh. All rights reserved.
 //
-/*
- - (start,end)지점을 두어서 상어의 위치에서 BFS
- - BFS를
- https://velog.io/@skyepodium/%EB%B0%B1%EC%A4%80-16236-%EC%95%84%EA%B8%B0-%EC%83%81%EC%96%B4
- */
 #include <iostream>
 #include <stdio.h>
 #include <queue>
@@ -35,18 +30,18 @@ int min_y=0;
 void bfs(int x,int y){
     queue<pair<int,int>> q;
     q.push({x,y});
-    check[x][y] = 1;
+    check[x][y] = 0;
     while(!q.empty()){
         int dx = q.front().first;
         int dy = q.front().second;
         q.pop();
-        
         for(int i=0; i<4; i++){
             int mx = dx + dir[i][0];
             int my = dy + dir[i][1];
+            
             if(mx >= 0 && mx < n && my >= 0 && my <n ){
                 // 1.자기보다 큰 상어는 지나칠 수 없음
-                if(check[mx][my] != 0 || map[mx][my] > shark_size){
+                if(check[mx][my] != -1 || map[mx][my] > shark_size){
                     continue;
                 }
                 // 2. 이동거리를 갱신시켜준다.
@@ -105,20 +100,26 @@ int main(void){
         min_y = height;
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
-                check[i][j] = 0;
+                check[i][j] = -1;
             }
         }
         bfs(shark_x, shark_y);
         
         // 먹을수 있는 물고기를 찾은경우
         if(min_x != width && min_y != height){
+            // 이동시간을 더해줍니다.
             result += check[min_x][min_y];
             shark_eat_size++;
+            
+            // 만약 먹은 물고기수가 상어의 크기가 같다면
             if(shark_eat_size == shark_size){
                 shark_size++;
                 shark_eat_size=0;
             }
+            
+            // 먹은 물고기 위치 0 갱신
             map[min_x][min_y] = 0;
+            // 상어 위치 갱신
             shark_x = min_x;
             shark_y = min_y;
         }
